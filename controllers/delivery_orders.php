@@ -7,9 +7,7 @@ class Delivery_orders extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
-
-		$this->auth_token = '7781a9e0faed3c60b6106f93816bd7ee';
-
+	
 		$api_key = $this->config->item('rest_api_key');
 
 		if(!$_POST){
